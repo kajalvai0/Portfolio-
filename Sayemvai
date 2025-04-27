@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>এডভোকেট আ.স.ম সায়েম - নওগাঁ ৫</title>
+    <style>
+        body { font-family: 'Helvetica', sans-serif; margin: 0; background: #f4f4f4; }
+        header { background: #0077b6; color: white; padding: 20px 0; text-align: center; }
+        nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+        section { padding: 40px 20px; }
+        h2 { color: #023e8a; }
+        p { color: #333; }
+        .contact-form { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, textarea { width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        button { background: #0096c7; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        footer { background: #023e8a; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+        /* Slider styles */
+        .slider { position: relative; overflow: hidden; max-width: 100%; margin: 20px auto; }
+        .slides { display: flex; width: 300%; animation: slide 15s infinite; }
+        .slides img { width: 100%; border-radius: 10px; }
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            30% { transform: translateX(0%); }
+            35% { transform: translateX(-100%); }
+            65% { transform: translateX(-100%); }
+            70% { transform: translateX(-200%); }
+            100% { transform: translateX(-200%); }
+        }
+        /* Moving news ticker */
+        .news-ticker {
+            background: #0077b6;
+            overflow: hidden;
+            white-space: nowrap;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .news-ticker-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: ticker 20s linear infinite;
+        }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        /* Social link */
+        .social { text-align: center; margin-top: 20px; }
+        .social a { color: #0077b6; font-weight: bold; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>এডভোকেট আ.স.ম সায়েম</h1>
+    <p>নওগাঁ ৫ - উন্নয়নের জন্য অঙ্গীকারবদ্ধ</p>
+    <nav>
+        <a href="#about">পরিচিতি</a>
+        <a href="#vision">ভিশন ও মিশন</a>
+        <a href="#gallery">গ্যালারি</a>
+        <a href="#contact">যোগাযোগ</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>পরিচিতি</h2>
+    <p>এডভোকেট আ.স.ম সায়েম নওগাঁ ৫ আসনের একজন উদ্যমী ও নিবেদিতপ্রাণ নেতা। তিনি উন্নয়ন, শিক্ষা এবং সুশাসন প্রতিষ্ঠার জন্য নিরলস কাজ করে যাচ্ছেন।</p>
+</section>
+
+<section id="vision">
+    <h2>ভিশন ও মিশন</h2>
+    <p><strong>ভিশন:</strong> নওগাঁ ৫ আসনকে একটি সমৃদ্ধ, উন্নত ও শিক্ষিত অঞ্চল হিসেবে গড়ে তোলা।</p>
+    <p><strong>মিশন:</strong> সততা, নৈতিকতা এবং উন্নয়নের ধারাকে অনুসরণ করে, প্রতিটি নাগরিকের জীবনমান উন্নয়ন করা। শিক্ষা, স্বাস্থ্য ও অবকাঠামো উন্নয়নে নিরলস প্রচেষ্টা চালানো।</p>
+</section>
+
+<section id="gallery">
+    <h2>গ্যালারি</h2>
+    <div class="slider">
+        <div class="slides">
+            <img src="https://source.unsplash.com/featured/800x400?leadership" alt="নেতৃত্ব">
+            <img src="https://source.unsplash.com/featured/800x400?community" alt="সম্প্রদায়">
+            <img src="https://source.unsplash.com/featured/800x400?development" alt="উন্নয়ন">
+        </div>
+    </div>
+
+    <div class="news-ticker">
+        <div class="news-ticker-text">
+            সাম্প্রতিক খবর: নওগাঁ ৫ এ উন্নয়ন প্রকল্প শুরু হয়েছে || নতুন শিক্ষাপ্রতিষ্ঠান উদ্বোধন করা হয়েছে || স্বাস্থ্যসেবায় নতুন উদ্যোগ || রাস্তা ও যোগাযোগ ব্যবস্থার উন্নয়ন প্রকল্প চলছে ||
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>যোগাযোগ করুন</h2>
+    <div class="contact-form">
+        <form onsubmit="submitForm(event)">
+            <input type="text" placeholder="আপনার নাম" required>
+            <input type="email" placeholder="আপনার ইমেইল" required>
+            <textarea rows="5" placeholder="আপনার বার্তা লিখুন" required></textarea>
+            <button type="submit">পাঠান</button>
+        </form>
+    </div>
+
+    <div class="social">
+        <p>আমাদের ফেসবুক পেজ দেখতে এখানে ক্লিক করুন:</p>
+        <a href="YOUR_FACEBOOK_PAGE_URL" target="_blank">ফেসবুক পেজ</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; ২০২৫ এডভোকেট আ.স.ম সায়েম | সর্বস্বত্ব সংরক্ষিত</p>
+</footer>
+
+<script>
+    function submitForm(event) {
+        event.preventDefault();
+        alert('আপনার বার্তা সফলভাবে পাঠানো হয়েছে!');
+    }
+</script>
+
+</body>
+</html>
